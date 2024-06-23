@@ -1,36 +1,21 @@
+from flat import Bill, Flatmate
+from reports import PdfReport
 
-class Bill:
-    """
-        Object that contains data about a bill, such as
-        total amount and period of the bill.
-    """
-    def __init__(self, amount, period):
-        self.amount = amount
-        self.period = period
+amount = float(input("Enter the bill amount: "))
+period = input("Enter the bill period: e.g. December 2024")
 
-class Flatmate:
-    """
-        Creates a flatmate person who lives in the flat and
-        pays a share of the bill
-    """
-    def __init__(self, name, days_in_house):
-        self.name = name
-        self.days_in_house = days_in_house
+name1 = input("Enter your name: ")
+days_in_house1 = int(input("Enter the days of your stays in the house: "))
 
-    def pays(self, bill):
-        pass
+name2 = input("Enter another flatmate name: ")
+days_in_house2 = int(input(f"Enter the days of {name2} in the house: "))
 
-class PdfReport:
-    """
-        Creates a pdf file that contains data about the
-        flatmates such as their names, due amount, and the period
-        the bill.
-    """
+the_bill = Bill(amount=amount, period=period)
+flatmate1 = Flatmate(name=name1, days_in_house=days_in_house1)
+flatmate2 = Flatmate(name=name2, days_in_house=days_in_house2)
 
-    def __init__(self, filename):
-        self.filename = filename
+print(f"{flatmate1.name} pays: ", flatmate1.pays(bill=the_bill, flatmate2=flatmate2))
+print(f"{flatmate2.name} pays: ", flatmate2.pays(bill=the_bill, flatmate2=flatmate1))
 
-        def generate(self, flatmate1, flatmate2, bill):
-            pass
-
-
+pdf_report = PdfReport(filename=f"{the_bill.period}.pdf")
+pdf_report.generate(flatmate1=flatmate1, flatmate2=flatmate2, bill=the_bill)
