@@ -44,8 +44,8 @@ class CaloriesForm(Form):
     weight = StringField('Weight: ', default=72)
     height = StringField('Height: ', default=174)
     age = StringField('Age: ', default=120)
-    city = StringField('City: ', )
-    country = StringField('Country: ', )
+    city = StringField('City: ', default="Seoul")
+    country = StringField('Country: ', default="South Korea")
     button = SubmitField('Calculate')
 
 
@@ -53,3 +53,6 @@ app.add_url_rule('/', view_func=HomePage.as_view('home_page'))
 app.add_url_rule('/calories_form', view_func=CaloriesFormPage.as_view('calories_form_page'))
 
 app.run(debug=True)
+
+
+list(1,2,3,4)
