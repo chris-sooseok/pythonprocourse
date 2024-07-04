@@ -41,4 +41,5 @@ class Temperature:
 
 if __name__ == '__main__':
     temperature = Temperature('South Korea', 'Seoul')
+    temperature.headers
     print(temperature.get())

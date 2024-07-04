@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97bf6f52-dee5-42eb-9e7d-f18ac7a8dc83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/App-5-Flatmates-Bill-Web-App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/App-5-Flatmates-Bill-Web-App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bill_form_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bill_form_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
       <updated>1719217307804</updated>
       <workItem from="1719217308837" duration="3074000" />
       <workItem from="1719387872868" duration="1331000" />
-      <workItem from="1719390073095" duration="7345000" />
+      <workItem from="1719390073095" duration="9278000" />
     </task>
     <servers />
   </component>

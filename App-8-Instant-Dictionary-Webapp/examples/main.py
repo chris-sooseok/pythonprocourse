@@ -14,6 +14,7 @@ def home():
     jp.Div(a=div1, text="Just another div...", classes="text-gray-600")
     jp.Div(a=div1, text="Yet another div", classes="text-gray-600")
 
+    # in1 and in2 are basically attributes added to Button class
     div2 = jp.Div(a=div, classes="grid grid-cols-2 gap-4")
     jp.Button(a=div2, text="Calculate", click = sum_up, in1=in_1, in2=in_2,
               d = d_output,
